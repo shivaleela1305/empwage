@@ -4,6 +4,8 @@ public class empwage {
 
 	public static void main(String[] args) {
 		System.out.println("welcome to employee wage program");
+		
+		
 		int IS_FULL_TIME = 1;
         double check = Math.floor(Math.random()*10) % 2;
         if(IS_FULL_TIME == check){
@@ -11,6 +13,36 @@ public class empwage {
         }else{
             System.out.println("employee is absent");
         }
+        final int FULL_TIME = 1;
+        final int WAGE_PER_HR = 20;
+        int empType = (int) (Math.random() * 100) % 2;
+        int workingHours = 0;
+        if (empType == FULL_TIME)
+        {
+            System.out.println("Employee is Present");
+            workingHours = 8;
+        } else
+        {
+            System.out.println("Employee is Absent");
+        }
+        int wage = workingHours * WAGE_PER_HR;
+        System.out.println("Employee Daily Wage is " + wage);
+        
+        final int FULL_TIME1 = 1;
+        final int WAGE_PER_HR1 = 20;
+        int empType1 = (int) (Math.random() * 100) % 2;
+        int workingHours1 = 0;
+        if (empType1 == FULL_TIME1)
+        {
+            System.out.println("Employee is Present");
+            workingHours1 = 8;
+        } else
+        {
+            System.out.println("Employee is Absent");
+        }
+        int wage1 = workingHours1 * WAGE_PER_HR1;
+        System.out.println("Employee Daily Wage is " + wage1);
+        
 	}
 
 }

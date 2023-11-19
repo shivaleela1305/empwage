@@ -92,6 +92,26 @@ public class empwage {
             totalWage = totalWage + wage111;
         }
         System.out.println("total wage of the month is " + totalWage);
+        
+        final int PART_TIME111 = 1;
+        final int FULL_TIME1111 = 2;
+        final int WAGE_PER_HR1111 = 20;
+        final int Working_Days1111 = 20;
+
+        int totalWage1111 = 0;
+        for(int i = 1;i<Working_Days1111;i++){
+            int empType1111 = (int) (Math.random() * 100) % 3;
+            int workingHours1111 = 0;
+            switch (empType1111) {
+                case FULL_TIME1111: workingHours1111 = 8;
+                case PART_TIME111: workingHours1111 = 4;
+            
+                default: workingHours1111 = 0;
+            }
+            int wage1111 = workingHours1111 * WAGE_PER_HR1111;
+            totalWage1111 = totalWage1111 + wage1111;
+        }
+        System.out.println("total wage of the month is " + totalWage1111);
                 
 	}
 

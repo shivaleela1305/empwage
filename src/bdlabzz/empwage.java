@@ -50,6 +50,28 @@ public class empwage {
         int wage1 = workingHours1 * WAGE_PER_HR1;
         System.out.println("Employee Daily Wage is " + wage1);
         
+        final int PART_TIME1 = 1;
+        final int FULL_TIME11 = 2;
+        final int WAGE_PER_HR11 = 20;
+        int empType11 = (int) (Math.random() * 100) % 3;
+        int workingHours11 = 0;
+        switch (empType11) {
+            case FULL_TIME11:
+                System.out.println("Employee is Present");
+                workingHours11 = 8;
+                break;
+            case PART_TIME1:
+                System.out.println("employee is present part time");
+                workingHours11 = 4;
+                break;
+        
+            default:
+                System.out.println("Employee is Absent");
+                break;
+        }
+        
+        int wage11 = workingHours11 * WAGE_PER_HR11;
+        System.out.println("Employee Daily Wage is " + wage11);
                 
 	}
 

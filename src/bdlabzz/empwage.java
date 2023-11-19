@@ -13,6 +13,8 @@ public class empwage {
         }else{
             System.out.println("employee is absent");
         }
+        
+        
         final int FULL_TIME = 1;
         final int WAGE_PER_HR = 20;
         int empType = (int) (Math.random() * 100) % 2;
@@ -28,21 +30,27 @@ public class empwage {
         int wage = workingHours * WAGE_PER_HR;
         System.out.println("Employee Daily Wage is " + wage);
         
-        final int FULL_TIME1 = 1;
+        final int PART_TIME = 1;
+        final int FULL_TIME1 = 2;
         final int WAGE_PER_HR1 = 20;
-        int empType1 = (int) (Math.random() * 100) % 2;
+        int empType1 = (int) (Math.random() * 100) % 3;
         int workingHours1 = 0;
         if (empType1 == FULL_TIME1)
         {
             System.out.println("Employee is Present");
             workingHours1 = 8;
-        } else
+        }else if(empType1 == PART_TIME){
+            System.out.println("employee is present part time");
+            workingHours1 = 4;
+        } 
+        else
         {
             System.out.println("Employee is Absent");
         }
         int wage1 = workingHours1 * WAGE_PER_HR1;
         System.out.println("Employee Daily Wage is " + wage1);
         
+                
 	}
 
 }
